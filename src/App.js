@@ -6,11 +6,9 @@ import { useState, React } from "react";
 function App() {
   const [bobaInfo, setBobaInfo] = useState(null);
   const findBoba = () => {
-
-    fetch("http://127.0.0.1:5000/")
+    fetch("https://aqueous-tor-58953.herokuapp.com/")
     .then((response) => response.json())
     .then((data) =>  setBobaInfo(data));
-   
   }
 
   return (
